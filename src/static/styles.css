@@ -177,15 +177,24 @@ footer {
   font-size: 14px;
 }
 
-/* pequeño punto decorativo a la izquierda del nombre */
-.participants li::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #1a237e;
-  display: inline-block;
-  flex: 0 0 10px;
+/* layout: email left, delete button right */
+.participants li {
+  justify-content: space-between;
+}
+
+.delete-btn {
+  margin-left: 12px;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 .no-participants {
